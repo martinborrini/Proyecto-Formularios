@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Animado</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/transitions.css">
+</head>
+<body>
+    <main>
+        <form class="form" action="#" id="form">
+            <div class="form--group" id="group--user">
+                <label for="user" class="form--label">Usuario</label>
+                <div class="form--group-input">
+                    <input type="text" class="form--input" name="user" id="user" placeholder="Martin2">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener letras, números y gión bajo.</p>
+            </div>
+
+            <div class="form--group" id="group--name">
+                <label for="name" class="form--label">Nombre</label>
+                <div class="form--group-input">
+                    <input type="text" class="form--input" name="name" id="name" placeholder="Martin Borrini">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener letras, números y gión bajo.</p>
+            </div>
+
+            <div class="form--group" id="group--password">
+                <label for="password" class="form--label">Contraseña</label>
+                <div class="form--group-input">
+                    <input type="password" class="form--input" name="password" id="password" placeholder="********">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">La contraseña tiene que contener 4 a 16 dígitos.</p>
+            </div>
+
+            <div class="form--group" id="group--password2">
+                <label for="password2" class="form--label">Repetir Contraseña</label>
+                <div class="form--group-input">
+                    <input type="password" class="form--input" name="password2" id="password2" placeholder="********">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <div class="form--group" id="group--email">
+                <label for="email" class="form--label">Correo Electrónico</label>
+                <div class="form--group-input">
+                    <input type="email" class="form--input" name="email" id="email" placeholder="example@example.com">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">El correo solo puede contener números, letras, puntos, guiones y guión bajo.</p>
+            </div>
+
+            <div class="form--group" id="group--number">
+                <label for="number" class="form--label">Teléfono</label>
+                <div class="form--group-input">
+                    <input type="text" class="form--input" name="number" id="number" placeholder="54 9 370 400000">
+                    <i class="form--validation-state fas fa-times-circle"></i>
+                </div>
+                <p class="form--input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+            </div>
+
+            <div class="form--group .group--terms" id="group--terms">
+                <label class="condition-terms" for="#">
+                    <input class="form--checkbox" type="checkbox" name="terms" id="terms">
+                    <p>Acepto los terminos y condiciones.</p> 
+                </label>
+            </div>
+
+            <div class="form--msg" id="form--msg">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+
+            <div class="form--group form--group-btn-env">
+                <button type="submit" class="form--btn">Enviar</button>
+                <p class="form--msg-exito" id="form--msg-exito">El formulario se envió exitosamente</p>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/forms.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
